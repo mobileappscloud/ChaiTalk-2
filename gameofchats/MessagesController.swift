@@ -37,8 +37,36 @@ class MessagesController: UITableViewController {
         
         //observeMessages()
         
+        tableView.allowsMultipleSelectionDuringEditing = true
+        
     }
     
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
+    {
+        return true
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        guard let uid = FIRAuth.auth()?.currentUser?.uid else { return }
+        
+        let message = self.messages[indexPath.row]
+        if let chatPartnerId = message.chatPartnerId()
+        {
+            FIRDatabase.database().reference().child("user-messages").child(uid).child(chatPartnerId).removeValueWithCompletionBlock({ (error, ref) in
+                
+                if error != nil
+                {
+                    print("Failed to delete message \(error)")
+                    return
+                }
+                
+                self.messagesDictionary.removeValueForKey(chatPartnerId)
+                self.attemptReloadOfTable()
+                
+            })
+        }
+    }
     
     func observeUserMessages()
     {
@@ -60,7 +88,13 @@ class MessagesController: UITableViewController {
             }, withCancelBlock: nil)
             
         }, withCancelBlock: nil)
- 
+        
+        ref.observeEventType(.ChildRemoved, withBlock: { (snapshot) in
+            
+        self.messagesDictionary.removeValueForKey(snapshot.key)
+        self.attemptReloadOfTable()
+        
+        }, withCancelBlock: nil)
     }
     
     private func fetchMessageWithMessageId(messageId:String)
