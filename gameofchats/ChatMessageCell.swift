@@ -10,7 +10,7 @@ import UIKit
 
 class ChatMessageCell: UICollectionViewCell
 {
-    var chatLogController: ChatLogController? //Test commit
+    var chatLogController: ChatLogController? //Test
     
     let textView: UITextView =
     {
