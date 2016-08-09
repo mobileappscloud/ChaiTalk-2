@@ -339,6 +339,9 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
         cell.chatLogController = self 
         
         let message = messages[indexPath.item]
+        
+        cell.message = message 
+        
         cell.textView.text = message.text
         setUpCell(cell, message: message)
         
@@ -353,6 +356,8 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
             cell.bubbleWidthAnchor?.constant = 200
             cell.textView.hidden = true 
         }
+        
+        cell.playButton.hidden = message.videoUrl == nil 
 
         return cell
     }
@@ -486,6 +491,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
     var startingFrame: CGRect?
     var blackBackground:UIView?
     var startingImageView: UIImageView?
+    
     func performZoomInForImage(startingImageView:UIImageView)
     {
         self.startingImageView = startingImageView

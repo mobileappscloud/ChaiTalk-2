@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AD21F8B1D5A7AD1000331FD /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD21F8A1D5A7AD1000331FD /* play@2x.png */; };
 		406413BA19D72D4AAF809DFD /* Pods_ChaiTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B200F080844CBC3394F30318 /* Pods_ChaiTalk.framework */; };
 		B3189ED81D456D6C000FB09A /* chaiTalkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B3189ED71D456D6C000FB09A /* chaiTalkLogo.png */; };
 		B3189EDA1D456E77000FB09A /* RealChaiTalkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B3189ED91D456E77000FB09A /* RealChaiTalkLogo.png */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AD21F8A1D5A7AD1000331FD /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@2x.png"; sourceTree = "<group>"; };
 		76170F7DD845C86BCFD785EB /* Pods-ChaiTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaiTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChaiTalk/Pods-ChaiTalk.release.xcconfig"; sourceTree = "<group>"; };
 		8AB2A4F36B25C9A6CC624F3C /* Pods_gameofchats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gameofchats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8065E40B92B7CCB11171BED /* Pods-ChaiTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaiTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChaiTalk/Pods-ChaiTalk.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				C7A24D801D1E45DF00011542 /* AppDelegate.swift */,
 				C7A24D841D1E45DF00011542 /* Main.storyboard */,
 				C7A24D871D1E45DF00011542 /* Assets.xcassets */,
+				1AD21F8A1D5A7AD1000331FD /* play@2x.png */,
 				B3189EDB1D456EEF000FB09A /* ChaiTalkPic.png */,
 				B3189ED91D456E77000FB09A /* RealChaiTalkLogo.png */,
 				B3189ED71D456D6C000FB09A /* chaiTalkLogo.png */,
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD21F8B1D5A7AD1000331FD /* play@2x.png in Resources */,
 				B31E056F1D49A69600FA84AA /* eulaAgreement.rtf in Resources */,
 				C7A24D8B1D1E45DF00011542 /* LaunchScreen.storyboard in Resources */,
 				B3189ED81D456D6C000FB09A /* chaiTalkLogo.png in Resources */,
