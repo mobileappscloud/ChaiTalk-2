@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A73C6071D5D11950022121C /* ChatInputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A73C6061D5D11950022121C /* ChatInputContainerView.swift */; };
 		1AD21F8B1D5A7AD1000331FD /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD21F8A1D5A7AD1000331FD /* play@2x.png */; };
 		406413BA19D72D4AAF809DFD /* Pods_ChaiTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B200F080844CBC3394F30318 /* Pods_ChaiTalk.framework */; };
 		B3189ED81D456D6C000FB09A /* chaiTalkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B3189ED71D456D6C000FB09A /* chaiTalkLogo.png */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A73C6061D5D11950022121C /* ChatInputContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatInputContainerView.swift; sourceTree = "<group>"; };
 		1AD21F8A1D5A7AD1000331FD /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@2x.png"; sourceTree = "<group>"; };
 		76170F7DD845C86BCFD785EB /* Pods-ChaiTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaiTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChaiTalk/Pods-ChaiTalk.release.xcconfig"; sourceTree = "<group>"; };
 		8AB2A4F36B25C9A6CC624F3C /* Pods_gameofchats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gameofchats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +168,7 @@
 			children = (
 				C7FAEA991D304A4700BD5712 /* UserCell.swift */,
 				B3E83D661D41C73800486FB5 /* ChatMessageCell.swift */,
+				1A73C6061D5D11950022121C /* ChatInputContainerView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7027A7F1D2EC471007AA9BF /* ChatLogController.swift in Sources */,
+				1A73C6071D5D11950022121C /* ChatInputContainerView.swift in Sources */,
 				C7027A141D2455B5007AA9BF /* NewMessageController.swift in Sources */,
 				C7A24D831D1E45DF00011542 /* MessagesController.swift in Sources */,
 				C7FAEA911D2F4AB700BD5712 /* Message.swift in Sources */,
